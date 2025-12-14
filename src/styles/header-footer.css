@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+
+
+/* TITULO */
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background-color: #e0e0e0;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+/* NAVBAR */
+nav {
+    margin-left: 50px; /* ajusta según convenga */
+}
+
+nav ul {
+    display: flex;        /* esto hace que los li estén en fila */
+    gap: 16px;            /* espacio entre los links */
+    list-style: none;     /* quita los puntos */
+}
+
+nav ul li a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    transition: font-weight 0.2s;
+}
+
+nav ul li a:hover {
+    font-weight: 800;
+}
+
+/* FOOTER */
+footer {
+    background-color: #e0e0e0;
+    padding: 16px 0;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+footer ul {
+    list-style: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+    padding: 0;
+}
+
+footer ul li {
+    padding: 8px 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,45 @@
+.main-image {
+    height: 60%; 
+    width: 100%;   
+    position: relative;
+   
+    margin: 0 auto;
+}
+
+
+.icon {
+    position: absolute;   
+    bottom: 80px;             
+    left: 50%;                 
+    font-size: 40px;
+    color: white;
+    animation: saltar 1s ease-in-out infinite; 
+
+}
+
+
+
+    
+    @keyframes saltar{
+        0% { transform: translateY(0);}
+        50% { transform: translateY(-50px);}
+        100% { transform: translateY(0);}
+    }
+    
+    .container-middle {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;      
+        justify-content: center;  
+        text-align: center;       
+        gap: 10px;      
+        padding: 40px 20px;  
+       
+    }
+    
+      .container-middle h2{
+        font-weight: bolder;
+        font-size: 30px;
+      
+      }  
+ 
