@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/contacto.css";
+import { useSearchParams } from "react-router-dom";
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -7,6 +8,10 @@ const Contacto = () => {
     email: "",
     mensaje: "",
   });
+
+  // 🔹 Search params
+  const [searchParams] = useSearchParams();
+  const obra = searchParams.get("obra");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -34,8 +39,16 @@ const Contacto = () => {
       return;
     }
 
+    // 🔹 Mensaje final incluyendo la obra si existe
+    const mensajeFinal = obra
+      ? `Obra consultada: ${obra}\n\n${formData.mensaje}`
+      : formData.mensaje;
+
     console.log("Formulario enviado:");
-    console.log(formData);
+    console.log({
+      ...formData,
+      mensaje: mensajeFinal,
+    });
 
     alert("Formulario enviado correctamente 🙌");
 
@@ -56,47 +69,61 @@ const Contacto = () => {
   };
 
   return (
-    
-    <main >
+    <main>
       <h2>Contacto</h2>
+
       <div className="contact-container">
-      <form onSubmit={handleSubmit} className="form">
-        <label>Nombre</label>
-        <input
-          type="text"
-          name="nombre"
-          value={formData.nombre}
-          onChange={handleChange}
-          placeholder="Tu nombre"
-        />
 
-        <label>Email</label>
-        <input
-          type="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          placeholder="correo@example.com"
-        />
+        {/* 🔹 Muestra la obra seleccionada si viene por URL */}
+        {obra && (
+          <p className="obra-seleccionada">
+            Consulta por la obra: <strong>{obra}</strong>
+          </p>
+        )}
 
-        <label>Mensaje</label>
-        <textarea
-          name="mensaje"
-          value={formData.mensaje}
-          onChange={handleChange}
-          placeholder="Escribí tu mensaje aquí"
-        ></textarea>
+        <form onSubmit={handleSubmit} className="form">
+          <label>Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            value={formData.nombre}
+            onChange={handleChange}
+            placeholder="Tu nombre"
+          />
 
-        <div className="botones">
-          <button type="submit" className="mandar">Enviar</button>
-          <button type="button" className="reset" onClick={handleReset}>
-            Reset
-          </button>
-        </div>
-      </form>
+          <label>Email</label>
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            placeholder="correo@example.com"
+          />
+
+          <label>Mensaje</label>
+          <textarea
+            name="mensaje"
+            value={formData.mensaje}
+            onChange={handleChange}
+            placeholder="Escribí tu mensaje aquí"
+          ></textarea>
+
+          <div className="botones">
+            <button type="submit" className="mandar">
+              Enviar
+            </button>
+            <button
+              type="button"
+              className="reset"
+              onClick={handleReset}
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+
       </div>
     </main>
-    
   );
 };
 

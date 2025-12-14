@@ -1,14 +1,12 @@
-/* CONTENEDOR PRINCIPAL */
 .contact-container {
   width: 100%;
   display: flex;
-  justify-content: center;   /* ✔ CENTRA EL FORMULARIO HORIZONTALMENTE */
-  align-items: start;        /* ✔ LO ALINEA ARRIBA DE FORMA ELEGANTE */
+  justify-content: center;   
+  align-items: start;        
 
   padding: 20px 0;
 } 
 
-/* FORMULARIO */
 form {
   background-color: #f7f7f7;      
   padding: 40px;
@@ -21,7 +19,6 @@ form {
   gap: 20px;
 }
 
-/* LABELS */
 form label {
   font-family: "Raleway", sans-serif;
   font-size: 15px;
@@ -29,7 +26,7 @@ form label {
   color: #333;
 }
 
-/* INPUTS Y TEXTAREA */
+
 form input,
 form textarea {
   width: 100%;
@@ -45,7 +42,7 @@ form textarea {
   height: 130px;
 }
 
-/* BOTONES */
+
 .botones {
   display: flex;
   justify-content: center;
@@ -79,4 +76,10 @@ form textarea {
 
 .botones .reset:hover {
   background-color: #cfcfcf;
+}
+
+.obra-seleccionada {
+  margin-bottom: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #555;
 }
