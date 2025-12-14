@@ -25,6 +25,8 @@ const Venta = () => {
 
   return (
     <main className="venta-container">
+      <p>TEST FILTRO</p>
+
       <h2 className="titulo">Obras Disponibles</h2>
 
       {/* 🔹 Botón de filtro */}
