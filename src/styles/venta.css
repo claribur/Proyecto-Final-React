@@ -75,3 +75,26 @@
     margin: 20px;
     text-align: center;
 }
+
+.filtro-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .filtro-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .filtro-btn:hover {
+    background-color: #333;
+  }
+  
