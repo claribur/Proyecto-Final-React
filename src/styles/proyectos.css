@@ -53,4 +53,19 @@ main {
     object-fit: cover;   
 
   }
+  @media (max-width: 768px) {
+    .proyectos-container,
+    .cards {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .card {
+      max-width: 100%;
+    }
+  
+    .card img {
+      height: auto;
+    }
+  }
   

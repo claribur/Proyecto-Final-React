@@ -54,4 +54,22 @@
     height: auto;      
     display: block;
   }
+  @media (max-width: 768px) {
+    .nosotros-container {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .nosotros-container img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .nosotros-container p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  }
   
