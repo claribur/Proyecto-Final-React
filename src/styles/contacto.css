@@ -86,4 +86,20 @@ form textarea {
     text-align: center;
     font-weight: 500;
   }
+
+  @media (max-width: 768px) {
+    form {
+      padding: 25px;
+      margin: 0 10px;
+    }
+  
+    .botones {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .botones button {
+      width: 100%;
+    }
+  }
   
