@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/navbar.css";
 import "../styles/header-footer.css";
-
 
 const Footer = () => {
   return (
@@ -11,18 +11,24 @@ const Footer = () => {
 
         <ul>
           <li>INFORMACIÓN</li>
-          <li><a href="/">Home</a></li>
-          <li><a href="/proyectos">Proyectos</a></li>
-          <li><a href="/Venta">Shop Galery</a></li>
-          <li><a href="/nosotros">Quienes Somos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/proyectos">Proyectos</Link></li>
+          <li><Link to="/Venta">Shop Gallery</Link></li>
+          <li><Link to="/nosotros">Quienes Somos</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
 
         <ul>
           <li>CONTACTO</li>
-          <li><i className="fa-brands fa-whatsapp"></i> +54 9 11 6677-8899</li>
-          <li><i className="fa-regular fa-envelope"></i> Veronicalinaresarte@gmail.com</li>
-          <li><i className="fa-brands fa-instagram"></i> @veronicalinares.arte</li>
+          <li>
+            <i className="fa-brands fa-whatsapp"></i> +54 9 11 6677-8899
+          </li>
+          <li>
+            <i className="fa-regular fa-envelope"></i> Veronicalinaresarte@gmail.com
+          </li>
+          <li>
+            <i className="fa-brands fa-instagram"></i> @veronicalinares.arte
+          </li>
         </ul>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 import React from "react";
-import "../styles/venta.css"; 
+import { Link } from "react-router-dom";
+import "../styles/venta.css";
 
 const Card = ({ img, title, price }) => {
   return (
@@ -17,9 +18,9 @@ const Card = ({ img, title, price }) => {
       </div>
 
       <div className="card-boton">
-        <button className="mandar">
-          <a href="/Contacto">Contactanos</a>
-        </button>
+        <Link to="/Contacto" className="mandar">
+          Contactanos
+        </Link>
       </div>
     </div>
   );
