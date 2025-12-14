@@ -42,4 +42,7 @@
         font-size: 30px;
       
       }  
- 
+ main h2{
+    margin: 20px;
+    text-align: center;
+ }
