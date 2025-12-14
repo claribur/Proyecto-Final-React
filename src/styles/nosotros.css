@@ -54,22 +54,41 @@
     height: auto;      
     display: block;
   }
+
   @media (max-width: 768px) {
-    .nosotros-container {
+    .historia {
       flex-direction: column;
       padding: 20px;
       text-align: center;
     }
   
-    .nosotros-container img {
+    .columna-name {
+      flex: none;
+      margin-bottom: 20px;
+    }
+  
+    .minombre {
+      font-size: 2rem;
+    }
+  
+    .columna-name ul {
+      margin-top: 20px;
+    }
+  
+    .columna-p {
+      flex: none;
+      width: 100%;
+    }
+  
+    .columna-p p {
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  
+    .columna-img img {
       width: 100%;
       max-width: 300px;
       margin: 0 auto;
-    }
-  
-    .nosotros-container p {
-      font-size: 15px;
-      line-height: 1.6;
     }
   }
   
