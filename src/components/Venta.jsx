@@ -2,20 +2,20 @@ import React, { useState } from "react";
 import "../styles/venta.css";
 import "../styles/header-footer.css";
 
-// Importo el componente Card
+
 import Card from "./card";
 
-// Importo las imágenes reales
+
 import cuadro1 from "../assets/IMG_3565.jpg";
 import cuadro2 from "../assets/IMG_3566.jpg";
 import cuadro3 from "../assets/IMG_3557.jpg";
 import cuadro4 from "../assets/IMG_3563.jpg";
 
 const Venta = () => {
-  // 🔹 Estado para el filtro
+ 
   const [soloCaras, setSoloCaras] = useState(false);
 
-  // 🔹 Array de obras (mejor práctica)
+
   const obras = [
     { img: cuadro1, title: "Navidad", price: 400000 },
     { img: cuadro2, title: "La Bella Durmiente", price: 100000 },
@@ -25,11 +25,10 @@ const Venta = () => {
 
   return (
     <main className="venta-container">
-      <p>TEST FILTRO</p>
 
       <h2 className="titulo">Obras Disponibles</h2>
 
-      {/* 🔹 Botón de filtro */}
+    
       <div className="filtro-container">
         <button
           className="filtro-btn"
