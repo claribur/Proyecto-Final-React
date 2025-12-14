@@ -9,7 +9,6 @@ const Home = () => {
     <main>
       <div className="img-container">
         <img className="main-image" src={fotoUnida} alt="Galería" />
-{/* <i className="fa-solid fa-arrow-down icon"></i> */}
 </div>
 
       <div className="container-middle">

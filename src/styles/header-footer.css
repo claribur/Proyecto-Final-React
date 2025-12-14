@@ -27,14 +27,14 @@ header {
     padding: 0 30px;
 }
 
-/* NAVBAR */
+
 nav {
-    margin-left: 50px; /* ajusta según convenga */
+    margin-left: 50px; 
 }
 
 nav ul {
-    display: flex;        /* esto hace que los li estén en fila */
-    gap: 16px;            /* espacio entre los links */
+    display: flex;        
+    gap: 16px;            
     list-style: none;     /* quita los puntos */
 }
 

@@ -1,6 +1,4 @@
-/* ===========================
-   NAVBAR FIJO ARRIBA
-   =========================== */
+
    .navbar-fixed {
     position: fixed;
     top: 0;
@@ -25,9 +23,7 @@
   }
   
   
-  /* ===========================
-     NAV DESKTOP
-     =========================== */
+
   .nav-desktop ul {
     display: flex;
     gap: 25px;
@@ -45,77 +41,8 @@
   .nav-desktop ul li a:hover {
     opacity: 0.7;
   }
-  
-  
-  /* ===========================
-     BOTÓN LATERAL (HAMBURGUESA)
-     =========================== */
-     .side-button {
-      position: fixed;
-      top: 120px;
-      right: 20px;
-      font-size: 30px;
-      background: black;
-      color: white;
-      border: none;
-      padding: 10px 14px;
-      border-radius: 8px;
-      cursor: pointer;
-      z-index: 1001;
-      display: block; /* Forzado visible */
-    }
-    
-    
-    /* ===========================
-       MENÚ LATERAL DESPLEGABLE
-       =========================== */
-       .side-menu {
-        position: fixed;
-        top: 0;
-        right: -250px;
-        width: 230px;
-        height: 100vh;
-        background: white;
-        padding-top: 100px;
-        box-shadow: -3px 0 10px rgba(0,0,0,0.1);
-        transition: 0.3s ease;
-        z-index: 999;
-      }
-      
-      .side-menu.open {
-        right: 0;
-      }
-      
-      .side-menu ul {
-        list-style: none;
-        padding-left: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
-      
-      .side-menu ul li a {
-        color: black;
-        font-family: "Raleway", sans-serif;
-        font-weight: 600;
-        text-decoration: none;
-      }
-      
-      
-      /* ===========================
-         OCULTAR HAMBURGUESA EN DESKTOP
-         =========================== */
-      @media (min-width: 900px) {
-        .side-button {
-          display: none;
-        }
-      }
-      
-      
-      /* ===========================
-         AJUSTE PARA QUE EL NAVBAR NO TAPE EL CONTENIDO
-         =========================== */
+ 
       main {
-        padding-top: 120px; /* Ajustá si tu navbar es más chico/grande */
+        padding-top: 120px; 
       }
     

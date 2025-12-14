@@ -9,7 +9,6 @@ const Contacto = () => {
     mensaje: "",
   });
 
-  // 🔹 Search params
   const [searchParams] = useSearchParams();
   const obra = searchParams.get("obra");
 
@@ -25,7 +24,6 @@ const Contacto = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validaciones simples
     if (!formData.nombre.trim()) {
       alert("Por favor escribí tu nombre.");
       return;
@@ -39,7 +37,6 @@ const Contacto = () => {
       return;
     }
 
-    // 🔹 Mensaje final incluyendo la obra si existe
     const mensajeFinal = obra
       ? `Obra consultada: ${obra}\n\n${formData.mensaje}`
       : formData.mensaje;
@@ -52,7 +49,6 @@ const Contacto = () => {
 
     alert("Formulario enviado correctamente 🙌");
 
-    // Resetear formulario
     setFormData({
       nombre: "",
       email: "",
@@ -74,7 +70,6 @@ const Contacto = () => {
 
       <div className="contact-container">
 
-        {/* 🔹 Muestra la obra seleccionada si viene por URL */}
         {obra && (
           <p className="obra-seleccionada">
             Consulta por la obra: <strong>{obra}</strong>

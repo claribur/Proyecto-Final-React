@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/proyectos.css";
 
-// Importar imágenes
+// todas las  imágenes
 import img1 from "../assets/IMG_3561.jpg";
 import img2 from "../assets/IMG_3557.jpg";
 import img3 from "../assets/IMG_444596BA213C-1.jpeg";
