@@ -19,7 +19,7 @@ const Card = ({ img, title, price }) => {
 
       <div className="card-boton">
       <Link
-          to={`/Contacto?obra=${encodeURIComponent(title)}`}lassName="mandar">
+          to={`/Contacto?obra=${encodeURIComponent(title)}`}className="mandar">
           Contactanos
         </Link>
       </div>
