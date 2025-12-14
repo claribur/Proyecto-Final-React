@@ -109,7 +109,7 @@ const Contacto = () => {
           ></textarea>
 
           <div className="botones">
-            <button type="submit" className="mandar">
+            <button type="submit" className="enviar">
               Enviar
             </button>
             <button
